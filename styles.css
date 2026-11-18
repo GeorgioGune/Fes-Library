@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -272,3 +276,62 @@ FEATURES
   padding-right: 6px;
   color: #bfbfbf;
 }
+
+/* 
+
+RECENT
+
+*/
+
+#recent {
+  padding-top: 8vw;
+}
+
+/* 
+
+EXPLORE
+
+*/
+
+#explore {
+  background-color: rgba(115, 66, 214, 0.1);
+}
+.row__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #242424;
+}
+
+.footer__logo {
+  width: 160px;
+  filter: grayscale(1) invert(1);
+  margin-bottom: 8px;
+}
+
+.footer__logo--img {
+  display: flex;
+}
+
+.footer__link, .footer__copyright {
+  color: #ffffff;
+}
+
+.footer__list {
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  padding: 0 8px;
+  text-decoration: none;
+}
+
