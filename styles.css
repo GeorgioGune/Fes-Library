@@ -9,6 +9,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  /* this prevents the nudge that happens when opening the menu */
 }
 
 body {
@@ -139,6 +141,11 @@ li {
   opacity: 1;
 }
 
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
 .menu__links {
   display: flex;
   flex-direction: column;
@@ -170,7 +177,6 @@ li {
 .menu__link:hover {
   text-decoration: none;
 }
-
 
 
 .menu__list {
@@ -483,6 +489,30 @@ MEDIA QUERIES
 
 /* 
 
+RESPONSIVENESS TABLETS
+
+*/
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  button {
+    font-size: 18px;
+  }
+  ,header_description {
+    padding; 0 24px;
+  }
+  .book {
+    width: 50%
+  }
+}
+
+/* 
+
 RESPONSIVENESS PHONES
 
 */
@@ -494,5 +524,13 @@ RESPONSIVENESS PHONES
 
   .btn__menu {
     display: block;
+  }
+  
+  .highlight {
+    width: 100%;
+  }
+
+  .highlight:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
